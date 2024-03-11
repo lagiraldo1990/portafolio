@@ -1,0 +1,185 @@
+/* configuraciones generales */
+:root{
+	--primary-color: #ffffff;
+	--secondary-color: #4282d0;
+	--bg-color: #f7f7f7;
+	--light-color: #d8d8d8;
+
+    --header-tile-font: poppins-bold;
+	--text-font: poppins;
+	--menu-font: poppins-bold;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: var(--text-font);
+}
+
+@font-face {
+	font-family: poppins;
+	src: url('./assets/fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+	font-family: poppins-bold;
+    src: url('./assets/fonts/Poppins-Bold.ttf');
+}
+
+@font-face {
+	font-family: poppins-Extrabold;
+    src: url('./assets/fonts/Poppins-ExtraBold.ttf');
+}
+
+/* header */
+
+header{
+	background-color: #384358;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	min-height: 90vh;
+}
+.imagen{
+	border-radius: 50%;
+}
+
+nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 30px;
+}
+
+nav ul{
+	display: flex;
+	list-style-type: none;
+}
+
+nav ul li{
+	padding: 10px;
+}
+ 
+nav ul li a {
+	color: var(--light-color);
+	text-decoration: none;
+	font-family: var(--menu-font);
+}
+
+nav ul li a:hover{
+	color: var(--secondary-color);
+}
+
+.header-img{
+    margin: 80px 5px;
+}
+
+
+
+.header-content{
+	max-width: 500px;
+	color: var(--light-color);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 5%;
+	margin-bottom: 50px;
+	margin:  5px  30%;
+
+}
+
+.title{
+	font-size: 80px;
+	font-family: var(--header-tile-font);
+}
+
+
+
+/*.btn:hover{
+	background-color: var(--secondary-color);
+	border: 2px solid var(--secondary-color);
+}*/
+
+.menu-mobile{
+	display: none;
+}
+
+@media(max-width: 800px){
+	.menu-mobile{
+		display: flex;
+	}
+	.menu-screen{
+		display: none;
+	}
+ }
+	
+
+@media(max-width: 1300px){
+	.cotent {
+		flex-direction: column;
+	}
+	.text{
+		margin-left:  20px;
+	}
+	.title {
+		font-size: 40px;
+	}
+	
+	.caja p {
+		font-size: 15px;
+	}
+	 /*.header-content-text{
+		padding: 10px 30px;
+	 }*/
+	
+}
+/* End header */
+/*cards section*/
+
+.cards{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 25px;
+	padding: 60px;
+	flex-wrap: wrap;
+}
+
+.card{
+	margin: 5px;
+	padding: 30px;
+	border: 1px solid var(--secondary-color);
+	border-radius: 15px;
+	max-width: 350px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.card h5 {
+	font-size: 3vh;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+.card p {
+	text-align: center;
+}
+
+/* end cards section*/
+
+/*avilidades*/
+
+
+
+/*end avilidades*/
+
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+    text-align: center;
+}
